@@ -1,0 +1,93 @@
+%% ---------------------------------------------------------------------------
+\documentclass[12pt, letterpaper]{article}
+%% ---------------------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+%% ---------------------------------------------------------------------------
+\usepackage[top=1.0in,bottom=1.0in,left=1.0in,right=1.0in]{geometry}
+%% ---------------------------------------------------------------------------
+\usepackage{paralist}
+%% ---------------------------------------------------------------------------
+% Should be loaded before "multibib"
+\usepackage{cite}
+%% ---------------------------------------------------------------------------
+% C:\w\texmf\doc\latex\multibib\multibib.dvi
+\usepackage{multibib}
+\newcites{Arts}{Articles in peer-reviewed journals}
+\newcites{Books}{Books}
+\newcites{Col}{Articles in thematic collections}
+\newcites{Conf}{Conference proceedings}
+\newcites{Thes}{Books of abstracts}
+\setbiblabelwidth{99}
+%% ---------------------------------------------------------------------------
+\renewcommand{\baselinestretch}{1.05}
+%% ---------------------------------------------------------------------------
+\begin{document}
+
+\section*{Alexander Pozdneev's Publications}
+
+In total, 29 publications:
+\begin{compactitem}[---]
+\item
+  1 IBM Redpaper publication (1 in English)~\citeBooks{%
+        REDP-5169
+  },
+\item
+	4 articles in peer-reviewed journals (1 in English, 1 translated to English)~\citeArts{%
+        pozdneev:matmod-2009,
+        pozdneev:pps-2009,
+        pozdneev:vestnik-2008-en,
+        nikolaev:rcm-2007%
+    },
+\item
+	21 publications in conferences proceedings (13 in English)~\citeConf{%
+        smirnov:piers-2014,
+        pozdneev:pavt-2011,
+        pozdneev:abrau-2010,
+        gulyaev:abrau-2010,
+        pozdneev:lomonosov-2009,
+        pozdneev:abrau-2008,
+        nikolaev:plasma-2008,
+        pozdneev:asms-2008,
+        boldin:mipt-2007,
+        pozdneev:abrau-2007,
+        avtonomov:vmso-2007,
+        ryumin:vmso-2007,
+        nikolaev:ftms-2007,
+        nikolaev:asms-2007,
+        popov:tikhonov-2006,
+        chingin:asms-2006,
+        burakiewicz:asms-2006,
+        nikolaev:asms-2006,
+        nikolaev:asms-2005,
+        popov:asms-2005,
+        nikolaev:florida-2005%
+    },
+\item
+	2 articles in thematic collections (0 in English)~\citeCol{%
+        pozdneev:korolev-2007,
+        korolev:korolev-2007%
+    },
+\item
+	1 publication in a book of abstracts (0 in English)~\citeThes{%
+        pozdneev:diploma-2006%
+    }.
+\end{compactitem}
+
+\bibliographystyleBooks{unsrt}
+\bibliographyBooks{pozdneev-books}
+
+\bibliographystyleArts{unsrt}
+\bibliographyArts{pozdneev-arts}
+
+\bibliographystyleConf{unsrt}
+\bibliographyConf{pozdneev-conf}
+
+\bibliographystyleCol{unsrt}
+\bibliographyCol{pozdneev-col}
+
+\bibliographystyleThes{unsrt}
+\bibliographyThes{pozdneev-thes}
+
+\end{document}
+%% ---------------------------------------------------------------------------

@@ -1,0 +1,58 @@
+%% ---------------------------------------------------------------------------
+\documentclass[12pt, a4paper]{article}
+%% ---------------------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+%% ---------------------------------------------------------------------------
+\usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+%% ---------------------------------------------------------------------------
+\frenchspacing
+%% ---------------------------------------------------------------------------
+\usepackage{cite} % should be loaded before "multibib"
+%% ---------------------------------------------------------------------------
+\usepackage{multibib}
+\newcites{Arts}{Статьи в рецензируемых журналах}
+\newcites{Col}{Статьи в тематических сборниках}
+\newcites{Conf}{Публикации в трудах конференций}
+\newcites{Thes}{Сборники тезисов}
+\setbiblabelwidth{99}
+%% ---------------------------------------------------------------------------
+\usepackage{color}
+%% ---------------------------------------------------------------------------
+\begin{document}
+%% ---------------------------------------------------------------------------
+\thispagestyle{empty}
+
+\section*{Список наиболее значимых публикаций А.\,В.~Позднеева}
+
+{
+    \color{white}
+    \citeArts{%
+            pozdneev:matmod-2009,
+            pozdneev:pps-2009,
+            pozdneev:vestnik-2008,
+            nikolaev:rcm-2007%
+    }
+    \citeConf{%
+            pozdneev:asms-2008
+    }
+}
+
+\bibliographystyleArts{unsrtu1}
+\bibliographyArts{pozdneev-arts}
+
+\bibliographystyleConf{unsrtu1}
+\bibliographyConf{pozdneev-conf}
+
+
+\bigskip
+
+
+\noindent
+\begin{tabular}{p{13cm}r}
+Кандидат в кадровый резерв МГУ&
+А.\,В.~Позднеев\\
+\end{tabular}
+%% ---------------------------------------------------------------------------
+\end{document}
+%% ---------------------------------------------------------------------------
