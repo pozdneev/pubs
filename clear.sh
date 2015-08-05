@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rm -f *.aux *.bak *.bbl *.blg *.dvi *.log *~
+rm -f *.aux *.bak *.bbl *.blg *.dvi *.log *.out *~
