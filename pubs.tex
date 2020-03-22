@@ -15,6 +15,7 @@
 % C:\w\texmf\doc\latex\multibib\multibib.dvi
 \usepackage{multibib}
 \newcites{Arts}{Articles in peer-reviewed journals}
+\newcites{Patents}{Patents}
 \newcites{Books}{Books}
 \newcites{Col}{Articles in thematic collections}
 \newcites{Conf}{Conference proceedings}
@@ -27,7 +28,7 @@
 
 \section*{Alexander Pozdneev's Publications}
 
-In total, 36 publications:
+In total, 38 publications:
 \begin{compactitem}[---]
 \item
         5 articles in peer-reviewed journals (2 in English, 1 translated to English)~\citeArts{%
@@ -36,6 +37,11 @@ In total, 36 publications:
         pozdneev:pps-2009,
         pozdneev:vestnik-2008-en,
         nikolaev:rcm-2007%
+    },
+\item
+        2 patents (1 granted, 1 pending)~\citePatents{%
+        US10546355B2,
+        US20180113962A1%
     },
 \item
         24 publications in conference proceedings (15 in English)~\citeConf{%
@@ -87,6 +93,9 @@ In total, 36 publications:
 
 \bibliographystyleArts{unsrt}
 \bibliographyArts{pozdneev-arts}
+
+\bibliographystylePatents{unsrt}
+\bibliographyPatents{pozdneev-patents}
 
 \bibliographystyleConf{unsrt}
 \bibliographyConf{pozdneev-conf}
